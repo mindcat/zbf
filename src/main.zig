@@ -59,6 +59,7 @@ fn parseFileBF(filename: []const u8) !void {
         };
         _ = r.toss(1);
         std.debug.print("{s}\n", .{line.written()});
+        // try zbf.bufferedPrint("{s}\n", .{line.written()});
         line.clearRetainingCapacity();
     }
 
